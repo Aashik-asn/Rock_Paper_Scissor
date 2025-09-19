@@ -21,7 +21,8 @@
     flex-direction: row; /* default */
     justify-content: center;
     align-items: center;
-    gap:5rem;
+    flex-wrap: wrap; /* If there is no place, it automatically goes to nxt line */
+    gap:0rem 5rem;
 }
 
 .option:hover{
@@ -77,8 +78,9 @@ img{
     font-size: 30px;
     background-color: rgb(1,1,90);
     color:white;
-    display:inline;
+    display:inline-block;
     padding: 10px 15px;
     border-radius: 10px;
     font-weight:bold;
+
 }
