@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(220, 211, 248);
+}
+
+.heading{
+    background-color: rgb(1, 1, 90);
+    color: white;
+    height:5rem;
+    line-height: 5rem;
+    font-size: 30px;
+    font-weight: bolder ;
+    letter-spacing: 2px;
+}
+
+.options{
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: row; /* default */
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+}
+
+.option:hover{
+    cursor:pointer;
+}
+
+img:active{
+    height: 200px;
+    width: 200px;
+}
+
+.option{
+    background-color: rgb(1,1,90);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 220px;
+    width: 220px;
+    flex-grow: 0;
+    flex-shrink: 0; /* grow and shrink as the flexbox resizes when we resize browser */
+
+}
+
+img{
+    height:220px;
+    width:220px;
+    border-radius: 50%;
+    object-fit:cover;
+}
+
+.score-container{
+    margin-top: 3rem;;
+    display: flex;
+    justify-content: center;
+    gap:5rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.user-score,.bot-score{
+    font-size: 70px;
+}
+
+.user,.bot{ /* just for practice */
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    column-gap:5px;
+    margin-bottom: 3rem;
+}
+
+.desc{
+    font-size: 30px;
+    background-color: rgb(1,1,90);
+    color:white;
+    display:inline;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight:bold;
+}
